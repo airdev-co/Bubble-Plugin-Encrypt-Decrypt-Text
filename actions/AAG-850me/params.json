@@ -1,0 +1,29 @@
+{
+    "category": "plugins",
+    "display": "Decrypt string",
+    "fields": {
+        "AAE": {
+            "caption": "Input String",
+            "editor": "DynamicValue",
+            "name": "input_string",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "AAF": {
+            "caption": "Output String",
+            "name": "output_string",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAN": {
+            "caption": "Error",
+            "name": "error",
+            "rank": 1,
+            "value": "boolean"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}

@@ -1,0 +1,45 @@
+{
+    "category": "plugins",
+    "display": "Hash string",
+    "fields": {
+        "AAE": {
+            "caption": "Input String",
+            "editor": "DynamicValue",
+            "name": "input_string",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAK": {
+            "caption": "This workflow uses SHA256 to create a hash of whatever text you input into it, along with the secret Key you've entered into the plugin tab for this plugin. This hash cannot be decoded. To check if a value matches the hashed string, you'll need to hash the other plain string and then compare the hashes.",
+            "editor": "Label",
+            "name": "info",
+            "rank": 0
+        },
+        "AAO": {
+            "caption": "Encoding",
+            "default_val": "hex",
+            "editor": "Dropdown",
+            "name": "encoding",
+            "options": "hex,base64,binary",
+            "rank": 2
+        },
+        "AAP": {
+            "caption": "Algorithm",
+            "default_val": "sha256",
+            "editor": "Dropdown",
+            "name": "algorithm",
+            "options": "sha256,sha512",
+            "rank": 3
+        }
+    },
+    "return_value": {
+        "AAF": {
+            "caption": "Hashed String",
+            "name": "output_string",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}
