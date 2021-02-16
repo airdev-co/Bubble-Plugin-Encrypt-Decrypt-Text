@@ -30,6 +30,24 @@
             "name": "algorithm",
             "options": "sha256,sha512",
             "rank": 3
+        },
+        "AAg": {
+            "caption": "Salt length",
+            "default_val": 16,
+            "doc": "How many characters long should the randomly generated salt be?",
+            "editor": "DynamicValue",
+            "name": "salt_length",
+            "rank": 4,
+            "value": "number"
+        },
+        "AAh": {
+            "caption": "Salt",
+            "doc": "Give the saved salt if you're trying to compare some value to a previously hashed string.",
+            "editor": "DynamicValue",
+            "name": "salt",
+            "optional": true,
+            "rank": 5,
+            "value": "text"
         }
     },
     "return_value": {

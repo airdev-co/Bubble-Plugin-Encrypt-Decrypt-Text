@@ -18,7 +18,7 @@ function(properties, context) {
 
     var stringToHash = properties.input_string;
     
-    var salt = genRandomString(16);
+    var salt = properties.salt || genRandomString(properties.salt_length);
 
     const hashedString = crypto.createHmac(properties.algorithm, salt).update(stringToHash).digest(properties.encoding);
 

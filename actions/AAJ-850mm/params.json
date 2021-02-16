@@ -10,7 +10,7 @@
             "value": "text"
         },
         "AAK": {
-            "caption": "This workflow uses SHA256 to create a hash of whatever text you input into it, along with the secret Key you've entered into the plugin tab for this plugin. This hash cannot be decoded. To check if a value matches the hashed string, you'll need to hash the other plain string and then compare the hashes.",
+            "caption": "NOTE: Please use the \"hash string with salt\" action for a more secure implementation of string hashing. This workflow uses SHA256 to create a hash of whatever text you input into it, along with the secret Key you've entered into the plugin tab for this plugin. This hash cannot be decoded. To check if a value matches the hashed string, you'll need to hash the other plain string and then compare the hashes.",
             "editor": "Label",
             "name": "info",
             "rank": 0

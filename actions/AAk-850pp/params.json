@@ -1,0 +1,31 @@
+{
+    "category": "plugins",
+    "display": "Get random bytes",
+    "fields": {
+        "AAm": {
+            "caption": "Number of characters",
+            "default_val": 64,
+            "editor": "DynamicValue",
+            "name": "number_of_characters",
+            "rank": 0,
+            "value": "number"
+        },
+        "AAn": {
+            "caption": "Encoding",
+            "default_val": "hex",
+            "editor": "Dropdown",
+            "name": "encoding",
+            "options": "hex,base64",
+            "rank": 1
+        }
+    },
+    "return_value": {
+        "AAl": {
+            "caption": "Random bytes",
+            "name": "random_bytes",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}
